@@ -21,9 +21,7 @@
   },
   "homepage": "https://github.com/LLLisa/profipsum#readme",
   "dependencies": {
-    "express": "^4.17.3",
-    "pg": "^8.7.3",
-    "sequelize": "^6.17.0"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
