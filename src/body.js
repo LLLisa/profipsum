@@ -27,10 +27,11 @@ export default class Body extends React.Component {
   render() {
     const { sentences, paragraphs } = this.state;
     return (
-      <div className="container">
+      <div className="container mt-4">
         <h1>Prof Ipsum</h1>
         <form className="container-flush">
           <input
+            className="my-2"
             type="number"
             name="sentences"
             value={sentences}
@@ -40,6 +41,7 @@ export default class Body extends React.Component {
           <label htmlFor="sentences">number of sentences per paragraph</label>
 
           <input
+            className="my-2"
             type="number"
             name="paragraphs"
             value={paragraphs}
@@ -50,9 +52,11 @@ export default class Body extends React.Component {
         </form>
         <div className="mt-3">results below:</div>
         <hr />
-        {this.generateParagraphs().map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
-        ))}
+        <div>
+          {this.generateParagraphs().map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))}
+        </div>
         <div className="container">
           <div className="text-center mt-4">
             <em> - Eric "Prof" Katz</em>
