@@ -53,6 +53,11 @@ export default class Body extends React.Component {
         {this.generateParagraphs().map((paragraph, i) => (
           <p key={i}>{paragraph}</p>
         ))}
+        <div className="container">
+          <div className="text-center mt-4">
+            <em> - Eric "Prof" Katz</em>
+          </div>
+        </div>
       </div>
     );
   }
