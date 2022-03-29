@@ -13,11 +13,11 @@ const init = () => {
 
 init();
 
-app.use('/dist', express.static(path.join(__dirname, 'dist')));
+app.use('/dist', express.static(path.join(__dirname, '../dist')));
 
 app.get('/', async (req, res, next) => {
   try {
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, '../index.html'));
   } catch (error) {
     next(error);
   }

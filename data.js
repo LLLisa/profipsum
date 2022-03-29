@@ -1,4 +1,5 @@
 const fullSentences = [
+  'Eric Katz here, also known as Prof.',
   'Did you write this code?',
   "You could end up using 'includes'.",
   "Do not use 'includes'.",
