@@ -10,51 +10,43 @@ const fullSentences = [
   'Exactly!',
   'Good question!',
   'Are we recording this?',
-  "You know what, let's to this.",
+  "You know what, let's do this.",
+  "Let's get this to work.",
+  "There's no law that sayd you can't do that.",
   'Start with your data layer.',
   "There's nothing stopping you.",
+  'You could end up destructuring if you want to.',
   'You could end up putting your questions in the Slack.',
   'Build it out incrementally.',
   "I'm gonna get you out on time tonight.",
   'Gonna need 100% participation.',
   "You're not gonna need this, but I think it's pretty cool.",
+  'We;r gonne go nice and slow here.',
   "What's the intent?",
   'Always look at the intent.',
   'No copy & pasting!',
   'This ends up breaking.',
   "Nothing's preventing you.",
-  'Someone in tha chat real quick...',
   "You don't have to call it that, you can call it whatever you like.",
   "I'm just gonna destructure this.",
   "What's the simplest element we can show?",
   'And what do we look for to make sure we are connected?',
   "That's right horizontal rule, that's right.",
   'I always forget this.',
-  "...then we call super(), because that's the law.",
-  //starts
+  'Someone in tha chat real quick...',
   'Go into your breakout rooms, talk about it...',
   "There's one thing we could end up looking at...",
   "I'm gonna cheat a little here...",
   'When I end up doing this and going over here...',
   "What we're gonna end up doing here...",
   "If I had  nickel for every time I've written this line...",
-  //ends
+  "...then we call super(), because that's the law.",
+  "...and I've got my horizontal rule, so I know I'm connected.",
   "...then I'm gonna CD into it.",
   '...one, two, three.',
   "...and there's our horizontal rule.",
   '...and we get an error.',
-  //middles
 ];
-
-const startSentences = [
-  'Go into your breakout rooms, talk about it...',
-  "There's one thing we could end up looking at...",
-  "I'm gonna cheat a little here...",
-  'When I end up doing this and going over here...',
-  "What we're gonna end up doing here...",
-];
-
-const endSentences = ["...then I'm gonna CD into it.", '...one, two, three.'];
 
 const loremGen = (sentences, paragraphs = 1) => {
   const structure = [];

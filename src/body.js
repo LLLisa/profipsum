@@ -55,7 +55,7 @@ export default class Body extends React.Component {
             <label htmlFor="paragraphs"> number of paragraphs</label>
           </div>
         </form>
-        <div className="mt-3">results below:</div>
+        {/* <div className="mt-3">results below:</div> */}
         <hr />
         <div>
           {this.generateParagraphs().map((paragraph, i) => (
