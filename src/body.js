@@ -30,25 +30,30 @@ export default class Body extends React.Component {
       <div className="container mt-4">
         <h1>Prof Ipsum</h1>
         <form className="container-flush">
-          <input
-            className="my-2"
-            type="number"
-            name="sentences"
-            value={sentences}
-            min="1"
-            onChange={this.handleOnChange}
-          ></input>
-          <label htmlFor="sentences">number of sentences per paragraph</label>
+          <div>
+            <input
+              className="my-2 mx-2"
+              type="number"
+              name="sentences"
+              value={sentences}
+              min="1"
+              onChange={this.handleOnChange}
+            ></input>
+            <label htmlFor="sentences">
+              {' '}
+              number of sentences per paragraph
+            </label>
 
-          <input
-            className="my-2"
-            type="number"
-            name="paragraphs"
-            value={paragraphs}
-            min="1"
-            onChange={this.handleOnChange}
-          ></input>
-          <label htmlFor="paragraphs">number of paragraphs</label>
+            <input
+              className="my-2 mx-2"
+              type="number"
+              name="paragraphs"
+              value={paragraphs}
+              min="1"
+              onChange={this.handleOnChange}
+            ></input>
+            <label htmlFor="paragraphs"> number of paragraphs</label>
+          </div>
         </form>
         <div className="mt-3">results below:</div>
         <hr />

@@ -9,6 +9,8 @@ const fullSentences = [
   "That's not the error I was expecting.",
   'Exactly!',
   'Good question!',
+  'Are we recording this?',
+  "You know what, let's to this.",
   'Start with your data layer.',
   "There's nothing stopping you.",
   'You could end up putting your questions in the Slack.',
