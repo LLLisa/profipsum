@@ -4,7 +4,7 @@ const fullSentences = [
   "Do not use 'includes'.",
   'I like the muscle memory.',
   "You could write the proverbial 'hello world'",
-  'You could end up getting an error',
+  'You could end up getting an error.',
   "That's not the error I was expecting.",
   'Exactly!',
   'Good question!',
@@ -24,15 +24,17 @@ const fullSentences = [
   "You don't have to call it that, you can call it whatever you like.",
   "I'm just gonna destructure this.",
   "What's the simplest element we can show?",
-  'and what do we look for to make sure we are connected?',
+  'And what do we look for to make sure we are connected?',
   "That's right horizontal rule, that's right.",
+  'I always forget this.',
+  "...then we call super(), because that's the law.",
   //starts
   'Go into your breakout rooms, talk about it...',
   "There's one thing we could end up looking at...",
   "I'm gonna cheat a little here...",
   'When I end up doing this and going over here...',
   "What we're gonna end up doing here...",
-  "If I had  nickel for every time I'v written this line...",
+  "If I had  nickel for every time I've written this line...",
   //ends
   "...then I'm gonna CD into it.",
   '...one, two, three.',
@@ -67,7 +69,9 @@ const loremGen = (sentences, paragraphs = 1) => {
     }
     result.push(structure.join(' '));
   }
-  return result.join('\n');
+  return result.join(' \n ');
 };
 
-console.log(loremGen(6));
+// console.log(loremGen(6));
+
+export default loremGen;
