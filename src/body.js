@@ -28,39 +28,44 @@ export default class Body extends React.Component {
     const { sentences, paragraphs } = this.state;
     return (
       <div className="container mt-4">
-        <h1>Prof Ipsum</h1>
-        <form className="container-flush">
-          <div>
-            <input
-              className="my-2 mx-2"
-              type="number"
-              name="sentences"
-              value={sentences}
-              min="1"
-              onChange={this.handleOnChange}
-            ></input>
-            <label htmlFor="sentences">
-              {' '}
-              number of sentences per paragraph
-            </label>
-
-            <input
-              className="my-2 mx-2"
-              type="number"
-              name="paragraphs"
-              value={paragraphs}
-              min="1"
-              onChange={this.handleOnChange}
-            ></input>
-            <label htmlFor="paragraphs"> number of paragraphs</label>
+        <h1 className="text-center">Prof Ipsum</h1>
+        <form className="form-floating mb-3">
+          <div className="d-flex align-items-center justify-content-center">
+            <div className="mx-auto">
+              <input
+                className="form-control"
+                type="number"
+                name="sentences"
+                value={sentences}
+                min="1"
+                onChange={this.handleOnChange}
+              ></input>
+              <label htmlFor="sentences">
+                number of sentences per paragraph
+              </label>
+            </div>
+            <div className="mx-auto">
+              <input
+                className="form-control"
+                type="number"
+                name="paragraphs"
+                value={paragraphs}
+                min="1"
+                onChange={this.handleOnChange}
+              ></input>
+              <label htmlFor="paragraphs">
+                number of paragraphs to generate
+              </label>
+            </div>
           </div>
         </form>
-        {/* <div className="mt-3">results below:</div> */}
-        <hr />
-        <div>
-          {this.generateParagraphs().map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
+        <div className="row">
+          <div className="col-11 mx-auto">
+            <hr />
+            {this.generateParagraphs().map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
         </div>
         <div className="container">
           <div className="text-center mt-4">
