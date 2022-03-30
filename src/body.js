@@ -68,9 +68,9 @@ export default class Body extends React.Component {
           </div>
         </div>
         <div className="container">
-          <div className="text-center mt-4">
+          <h5 className="text-center mt-4">
             <em> - Eric "Prof" Katz</em>
-          </div>
+          </h5>
         </div>
       </div>
     );
