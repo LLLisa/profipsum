@@ -21,7 +21,7 @@ const fullSentences = [
   "I'm gonna get you out on time tonight.",
   'Gonna need 100% participation.',
   "You're not gonna need this, but I think it's pretty cool.",
-  "We're gonne go nice and slow here.",
+  "We're gonna go nice and slow here.",
   "What's the intent?",
   'Always look at the intent.',
   'No copy & pasting!',
