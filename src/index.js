@@ -4,7 +4,11 @@ import Body from './body';
 
 class Main extends React.Component {
   render() {
-    return <Body />;
+    return (
+      <div>
+        <Body />
+      </div>
+    );
   }
 }
 

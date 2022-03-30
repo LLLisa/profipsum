@@ -1,4 +1,4 @@
-const fullSentences = [
+const profisms = [
   'Eric Katz here, also known as Prof.',
   'Did you write this code?',
   "You could end up using 'includes'.",
@@ -34,6 +34,7 @@ const fullSentences = [
   'And what do we look for to make sure we are connected?',
   "That's right, a horizontal rule, that's right.",
   'I always forget this.',
+  "You eiether have the data, or you don't.",
   'Someone in the chat real quick...',
   'Go into your breakout rooms, talk about it...',
   "There's one thing we could end up looking at...",
@@ -49,17 +50,17 @@ const fullSentences = [
   '...and we get an error.',
 ];
 
-const loremGen = (sentences) => {
+const loremGen = (numOfSentences) => {
   const structure = [];
-  for (let x = 0; x < sentences; x++) {
-    let rand = Math.floor(Math.random() * fullSentences.length);
+  for (let x = 0; x < numOfSentences; x++) {
+    let rand = Math.floor(Math.random() * profisms.length);
     while (structure.includes(rand)) {
-      rand = Math.floor(Math.random() * fullSentences.length);
+      rand = Math.floor(Math.random() * profisms.length);
     }
     structure.push(rand);
   }
   for (let i = 0; i < structure.length; i++) {
-    structure[i] = fullSentences[structure[i]];
+    structure[i] = profisms[structure[i]];
   }
   return structure.join(' ');
 };
