@@ -12,7 +12,7 @@ const fullSentences = [
   'Are we recording this?',
   "You know what, let's do this.",
   "Let's get this to work.",
-  "There's no law that sayd you can't do that.",
+  "There's no law that says you can't do that.",
   'Start with your data layer.',
   "There's nothing stopping you.",
   'You could end up destructuring if you want to.',
