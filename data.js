@@ -49,25 +49,19 @@ const fullSentences = [
   '...and we get an error.',
 ];
 
-const loremGen = (sentences, paragraphs = 1) => {
+const loremGen = (sentences) => {
   const structure = [];
-  const result = [];
-  for (let n = 0; n < paragraphs; n++) {
-    for (let x = 0; x < sentences; x++) {
-      let rand = Math.floor(Math.random() * fullSentences.length);
-      while (structure.includes(rand)) {
-        rand = Math.floor(Math.random() * fullSentences.length);
-      }
-      structure.push(rand);
+  for (let x = 0; x < sentences; x++) {
+    let rand = Math.floor(Math.random() * fullSentences.length);
+    while (structure.includes(rand)) {
+      rand = Math.floor(Math.random() * fullSentences.length);
     }
-    for (let i = 0; i < structure.length; i++) {
-      structure[i] = fullSentences[structure[i]];
-    }
-    result.push(structure.join(' '));
+    structure.push(rand);
   }
-  return result.join(' \n ');
+  for (let i = 0; i < structure.length; i++) {
+    structure[i] = fullSentences[structure[i]];
+  }
+  return structure.join(' ');
 };
-
-// console.log(loremGen(6));
 
 export default loremGen;
